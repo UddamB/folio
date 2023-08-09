@@ -1,0 +1,474 @@
+/* Changing fonts and format*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Setting a smooth scroll when a section is clicked*/
+html{
+        scroll-behavior: smooth;
+}
+
+/* Setting color of background and foreground text*/
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/* Setting background image with format*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/DesktopBackground.png);
+    background-size: cover;
+    background-position: center;
+} 
+
+/* Formatting css of container to adjust logo*/
+.container{
+    padding: 10px 10%;
+}
+
+/* Formatting css of nav tag to make images and text side-by-side*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Formatting logo width*/
+.logo{
+    width: 140px;
+}
+
+/* Horizontally aligning links*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Changing style and color of links*/
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative
+}
+
+/* Adding colored lines under all links*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/* Adding a transition for the colored lines*/
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Adding space above main text*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+/* Adding space above subtext*/
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/* Changing color of name*/
+.header-text h1 span{
+    color: #ff004f;
+}
+/*----------about----------*/
+
+/* Changing color of about me heading*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+/* Adjusting format of main heading to right-side*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Changing width of column*/
+.about-col-1{
+    flex-basis: 35%;
+}
+
+/* Rounding borders of image*/
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Changing width of column*/
+.about-col-2{
+    flex-basis: 60%;
+}
+
+/* Changing color of main heading*/
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Horizontally aligning titles*/
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+/* Formatting spaces between titles*/
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Adding colored underlines*/
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/* Displaying hidden underlines for active links*/
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+/* Removing bullet points from content*/
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+/* Changing color of content*/
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+/* Hides all content*/
+.tab-contents{
+    display: none;
+}
+
+/* Shows content for each category*/
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*----------portfolio----------*/
+/* Adding more space above main title*/
+/*#portfolio{
+    padding: 50px 0;
+}*/
+
+/* Formats the pictures horizontally*/
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* Formats the work with borders*/
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Formats the pictures in blocks*/
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* Combines the text and images into a block with gradient*/
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+/* Adds spacing between title and body of block*/
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Adds white circle to external link icon */
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Zooms into block when hovered */
+.work:hover img{
+    transform: scale(1.1);
+}
+
+/* Displays text when zoomed in */
+.work:hover .layer{
+    height: 100%;
+}
+
+/* Adds button around "see more" */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+/* Changes color of button when hovered on */
+.btn:hover{
+    background: #ff004f;
+}
+
+/*----------contact----------*/
+/*Moving contact form to the left*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+/*Adding space above email id*/
+.contact-left p{
+    margin-top: 30px;
+}
+
+/*Adding space above email id*/
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/*Adding space above social media icons*/
+.social-icons{
+    margin-top: 30px;
+}
+
+/*Formatting social media icons with color and size*/
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/*Adding hover animation to social media icons*/
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/*Changing color of button to red*/
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+/*Changing width of contact form*/
+.contact-right form{
+    width: 100%;
+}
+
+/*Designing contact form text area*/
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/*Making the submit button clickable*/
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*Making the copyright area decorative*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*Changing color of copyright area heart*/
+.copyright i{
+    color: #ff004f;
+}
+
+/*----------css for small screens----------*/
+/*Hiding menu mobile icons*/
+nav .fa{
+    display: none;
+}
+
+/*Adding css properties for only small screens*/
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(Images/MobileBackground.png);
+    }
+
+    /*Changing header text size to fit screen*/
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+
+     /*Formatting subtext to avoid overlapping image*/
+    .header-text{
+        font-size: 11px;
+    }
+
+    /*Displaying menu mobile icons*/
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+
+    /*Adding a menu list*/
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    /*Formatting menu links vertically*/
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    /*Formatting menu cross vertically*/
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /*----About Me----*/
+    /*Decreasing font size for About Me section*/
+    .sub-title{
+        font-size: 40px;
+    }
+
+    /*Increasing size of image */
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    /*Adding space below image */
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    /*Decreasing font size of About Me title*/
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    /*Aligning body text with screen*/
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    /*Formatting contact me title to fit screen*/
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    /*Formatting copyright text to fit screen*/
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- External link for logos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Adding div for header -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- Adding logo image -->
+            <img src="Images/Logo.png" class="logo">     
+            <ul id="sidemenu">
+                <!-- Adding key links -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+            </ul>
+            <!-- Adding menu bars for mobile display -->
+            <i class="fa fa-bars" onclick="openmenu()"></i>   
+        </nav>
+        <div class="header-text">
+            <!-- Adding main and subtext -->
+            <p>A passionate developer<br>@ The Schulich School of Business</p>
+            <h1>Hey, I'm <span>Uddam</span><br></h1>
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/uddam-bhathal/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/UddamB"><i class="fa fa-github"></i></a>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Adding div for about section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- Adding xxx image -->
+                <img src="images/AboutMe.jpg">
+            </div>
+            <div class="about-col-2">
+                <!-- Adding main and subtext -->
+                <h1 class="sub-title">Innovation</h1>
+                <p> As a second year student with a strong passion for 
+                    business and technology, I enjoy taking on new tasks that challenge 
+                    my rationale, gaining perspective on the problems 
+                    faced through interdisciplinary team effort, and 
+                    keeping afloat current trends to produce products 
+                    worth investing in.</p>
+                <!-- Adding key sections with on-click feature -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('school')">School</p>
+                </div>
+                 <!-- Adding important skills -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, Java, JavaScript, HTML/CSS, Node.js</li>
+                        <li><span>Database</span><br>MySQL, Redis</li>
+                        <li><span>DevOps</span><br>Docker, Azure, Heroku</li>
+                        <li><span>Framework</span><br>Django</li>      
+                    </ul>
+                </div>
+                 <!-- Adding important experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Millions.co - Data Analyst (IT Solutions)</span></li>
+                        <li><span>Train Fitness - AI Project Intern</span></li>
+                        <li><span>Illuminate Universe - Project Management Intern (Cloud Architecture)</span></li>
+                        <li><span>HelloFresh - Sales Representative</span></li>
+                    </ul>
+                </div>
+                 <!-- Adding important school -->
+                <div class="tab-contents" id="school">
+                    <ul>
+                        <li><span>Schulich School of Business - York University</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Adding div for portfolio section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <p>"Technology is best when it brings people together." -Matt Mullenweg</p>
+        <!-- Adding portfolio images -->
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Portfolio1.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Ecombuy</h3>
+                    <p>Created an e-commerce web app to help manage Shopify stores 
+                        with SMTP email management and image upload;
+                        built using MySQL, Django, Node.js, and HTML/CSS</p>
+                    <a href="https://github.com/UddamB/ecombuy-app"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio2.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Drawing Simulator</h3>
+                    <p>Created a mario-themed drawing simulator with functioning GUI 
+                        in Java (Gradle) and GLSL</p>
+                    <a href="https://github.com/UddamB/Drawing-Simulator"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio3.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Trading Portfolio</h3>
+                    <p>Applied ICT concepts to break down charts using multiple time 
+                        frames, marking key levels for major areas of liquidity, 
+                        indicating potential buy/sell opportunities for stocks, crypto, 
+                        futures, and the forex markets</p>
+                    <a href="https://www.tradingview.com/u/Sincityy/"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio4.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>FinTech Course</h3>
+                    <p>Helping students break into the fintech industry, including web 
+                        development, app development, and data analysis</p>
+                    <a href="https://drive.google.com/file/d/1hXpvNZ2Et2CW42pN4Qnw7Ssz55ZyyCPM/view"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio5.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Cloud Architecture Course</h3>
+                    <p>A step-by-step guide to landing a role in cloud architecture; 
+                        includes applications of AWS, Azure, and Google Cloud</p>
+                    <a href="https://drive.google.com/file/d/15YiLmlQNNG09WYvtd01Irzc9_XMx4eZR/view"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio6.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Software Development Course</h3>
+                    <p>An introductory software development curriculum that teaches 
+                        students how to code in multiple languages, including Python, 
+                        Java, SQL...</p>
+                    <a href="https://drive.google.com/file/d/182hYObXKnybZ28vvV4zqXu7Jq8c8TfdB/view"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Portfolio7.jpg">
+                <div class="layer">
+                    <!-- Adding text and link under image -->
+                    <h3>Graphic Design Portfolio</h3>
+                    <p>Developed a range of visually aesthetic creations using Photoshop 
+                        & Figma for advertising, yearbook, and other client purposes</p>
+                    <a href="https://drive.google.com/drive/u/4/folders/1VYMqYxJnhrh24Vmcre0N3ycD-BRsO1_A"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/uddam-bhathal/" class="btn">See more</a>
+    </div>
+</div>
+<!-- Adding div for contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <!-- Adding contact info -->
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i>Uddamsingh14@gmail.com</p> 
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/uddam-bhathal/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/UddamB"><i class="fa fa-github"></i></a>  
+                </div>
+            </div>
+            <!-- Creating contact form -->
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa fa-heart"></i> by Uddam</p>
+    </div>
+</div>
+
+
+<script>
+
+    //defining variables for content retrieval 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    //removing all content when a category is clicked 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        //displaying color underline when a category is clicked 
+        event.currentTarget.classList.add("active-link");
+
+        //displaying specific content when a category is clicked
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    //displaying side menu 
+    var sidemenu = document.getElementById("sidemenu")
+
+    //displaying side menu when menu icon is clicked
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    //closing side menu when cross icon is clicked 
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+    
+<script>
+    //google sheets script to link contact form user entries to google sheets
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxH5S-BCDhncHuR5wK-vEzJuTDsQ4i6s3K5RL3pKrZDjp56k7vfOxbp_hS7hfjC86Vpww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
