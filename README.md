@@ -15,14 +15,15 @@ Feel free to fork and create your own 'folio!
 
 **Front-End:** HTML, CSS, JavaScript
 
-
-## Demo
-![folio](https://github.com/UddamB/Folio/assets/89602764/9f779749-f095-4795-89ff-80bd6c9c4c21)
-![folio2](https://github.com/UddamB/Folio/assets/89602764/a991bffb-3367-45ac-8eaa-d689145d15c2)
-![folio3](https://github.com/UddamB/Folio/assets/89602764/f184c655-42b8-4007-97d4-849ec666ddf2)
 ## Features
 
 - Cool button animations
 - Sleek color design
 - Live Contact Form   
 - Cross platform
+
+## Demo
+![folio](https://github.com/UddamB/Folio/assets/89602764/9f779749-f095-4795-89ff-80bd6c9c4c21)
+![folio2](https://github.com/UddamB/Folio/assets/89602764/a991bffb-3367-45ac-8eaa-d689145d15c2)
+![folio3](https://github.com/UddamB/Folio/assets/89602764/f184c655-42b8-4007-97d4-849ec666ddf2)
+
