@@ -4,7 +4,7 @@
 
 
 ## Description
-An aesthetic portfolio website used for personal resume/CV. 
+An aesthetic static portfolio website used for personal resume/CV. 
 
 The current web design includes a red and black theme with responsive buttons and transitions. After creating many different versions of a digital portfolio, I wanted to create one with the perfect blend between complex design and simplicity. Choosing a dark-theme with optimal color choice allowed for seamless flow from one section to another.
 
