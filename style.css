@@ -466,7 +466,7 @@ nav .fa{
         font-size: 14px;
     }
 }
-
+/*Formatting 'message sent successfully' pop-up*/
 #msg{
     color: #61b752;
     margin-top: -40px;
