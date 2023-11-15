@@ -20,7 +20,7 @@ Feel free to fork and create your own 'folio!
 - Cool button animations
 - Sleek color design
 - Live Contact Form   
-- Cross platform
+- Cross-platform
 
 ## Demo
 ![folio](https://github.com/UddamB/Folio/assets/89602764/9f779749-f095-4795-89ff-80bd6c9c4c21)
