@@ -379,7 +379,7 @@ nav .fa{
 /*Adding css properties for only small screens*/
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Images/MobileBackground.png);
+        background-image: url(images2/Daily\ Art.gif);
     }
 
     /*Changing header text size to fit screen*/
