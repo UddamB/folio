@@ -23,7 +23,8 @@ Feel free to fork and create your own 'folio!
 - Cross-platform
 
 ## Demo
-<img width="940" alt="Github_Profile" src="https://github.com/UddamB/folio/assets/89602764/fa34414d-c7f0-46c2-9bda-c5720cf1c8fb">
+
+https://github.com/UddamB/folio/assets/89602764/9b13bde8-4314-4f77-ab89-96e020038bce
 
 ![folio2](https://github.com/UddamB/Folio/assets/89602764/a991bffb-3367-45ac-8eaa-d689145d15c2)
 ![folio3](https://github.com/UddamB/Folio/assets/89602764/f184c655-42b8-4007-97d4-849ec666ddf2)
