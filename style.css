@@ -21,7 +21,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images2/Daily\ Art.gif);
+    background-image: url(Images2/Daily\ Art.gif);
     background-size: cover;
     background-position: center;
 } 
@@ -379,7 +379,7 @@ nav .fa{
 /*Adding css properties for only small screens*/
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images2/Daily\ Art.gif);
+        background-image: url(Images2/Daily\ Art.gif);
     }
 
     /*Changing header text size to fit screen*/
