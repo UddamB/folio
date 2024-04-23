@@ -21,7 +21,11 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
     background-image: url(images2/Daily\ Art.gif);
+=======
+    background-image: url(Images2/Daily\ Art.gif);
+>>>>>>> 0361b370d93502fc3531f07461954ff0e5b84a00
     background-size: cover;
     background-position: center;
 } 
@@ -379,7 +383,11 @@ nav .fa{
 /*Adding css properties for only small screens*/
 @media only screen and (max-width: 600px){
     #header{
+<<<<<<< HEAD
         background-image: url(images2/Daily\ Art.gif);
+=======
+        background-image: url(Images2/Daily\ Art.gif);
+>>>>>>> 0361b370d93502fc3531f07461954ff0e5b84a00
     }
 
     /*Changing header text size to fit screen*/
@@ -466,7 +474,7 @@ nav .fa{
         font-size: 14px;
     }
 }
-
+/*Formatting 'message sent successfully' pop-up*/
 #msg{
     color: #61b752;
     margin-top: -40px;
