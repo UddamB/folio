@@ -254,7 +254,7 @@ nav ul li a:hover::after{
 }
 
 /*Adding hover animation to "Skills", "Experience", "School" subtitles*/
-.tab-links.tab-links:hover{
+.tab-links:hover{
     color: white;
 }
 
