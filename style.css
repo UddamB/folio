@@ -253,6 +253,11 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
+/*Adding hover animation to "Skills", "Experience", "School" subtitles*/
+.tab-links.tab-links:hover{
+    color: white;
+}
+
 /* Zooms into block when hovered */
 .work:hover img{
     transform: scale(1.1);
